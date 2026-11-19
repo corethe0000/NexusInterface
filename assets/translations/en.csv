@@ -1109,3 +1109,13 @@ Recent rewards,Recent rewards,User.Staking
 last one %{time},last one %{time},User.Staking
 No staking rewards yet,No staking rewards yet,User.Staking
 View on explorer,View on explorer,Explorer
+%{network} - click for the normal colours,%{network} - click for the normal colours,Header
+%{network} - click for the testnet colours,%{network} - click for the testnet colours,Header
+%{network} - coins on this network have no value,%{network} - coins on this network have no value,Header
+Classic (globe),Classic (globe),Settings.Style
+Classic with mining stats,Classic with mining stats,Settings.Style
+Dashboard,Dashboard,Settings.Style
+Empty,Empty,Settings.Style
+"Classic shows the globe with the stats around it. Dashboard shows balance, staking, network and recent transactions in cards.","Classic shows the globe with the stats around it. Dashboard shows balance, staking, network and recent transactions in cards.",Settings.Style
+Private testnet %{number},Private testnet %{number},
+Testnet %{number},Testnet %{number},
