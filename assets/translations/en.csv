@@ -1119,3 +1119,18 @@ Empty,Empty,Settings.Style
 "Classic shows the globe with the stats around it. Dashboard shows balance, staking, network and recent transactions in cards.","Classic shows the globe with the stats around it. Dashboard shows balance, staking, network and recent transactions in cards.",Settings.Style
 Private testnet %{number},Private testnet %{number},
 Testnet %{number},Testnet %{number},
+%{smart_count} minute ago |||| %{smart_count} minutes ago,%{smart_count} minute ago |||| %{smart_count} minutes ago,Overview
+%{smart_count} hour ago |||| %{smart_count} hours ago,%{smart_count} hour ago |||| %{smart_count} hours ago,Overview
+%{smart_count} day ago |||| %{smart_count} days ago,%{smart_count} day ago |||| %{smart_count} days ago,Overview
+Show balances,Show balances,Overview
+Hide balances,Hide balances,Overview
+Log in to see your staking,Log in to see your staking,Overview
+Last reward,Last reward,Overview
+Nodes,Nodes,Overview
+%{nodes} in %{smart_count} country |||| %{nodes} in %{smart_count} countries,%{nodes} in %{smart_count} country |||| %{nodes} in %{smart_count} countries,Overview
+Your wallet,Your wallet,Overview
+Unknown location,Unknown location,Overview
+%{smart_count} node |||| %{smart_count} nodes,%{smart_count} node |||| %{smart_count} nodes,Overview
+outgoing,outgoing,Overview
+incoming,incoming,Overview
+Latency %{ms} ms,Latency %{ms} ms,Overview
