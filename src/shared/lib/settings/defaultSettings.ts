@@ -82,6 +82,7 @@ export type Settings = {
   bootstrapSuggestionDisabled: boolean;
   liteModeNoticeDisabled: boolean;
   preReleaseNoticeSeenVersion: string;
+  testnetIndicator: Array<'tag' | 'color' | 'banner' | 'icon'>;
   windowWidth: number;
   windowHeight: number;
   windowX: number | undefined;
@@ -166,6 +167,7 @@ export const defaultSettings: Settings = {
   bootstrapSuggestionDisabled: false,
   liteModeNoticeDisabled: false,
   preReleaseNoticeSeenVersion: '',
+  testnetIndicator: ['tag', 'color'],
   windowWidth: 1200,
   windowHeight: 800,
   windowX: undefined,
