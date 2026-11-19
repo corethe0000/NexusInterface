@@ -1128,3 +1128,5 @@
 "outgoing","de ieșire","Overview"
 "incoming","de intrare","Overview"
 "Latency %{ms} ms","Latență %{ms} ms","Overview"
+"to %{name}","către %{name}","Overview"
+"from %{name}","de la %{name}","Overview"

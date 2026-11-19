@@ -1129,3 +1129,5 @@
 "outgoing","одлазна","Overview"
 "incoming","долазна","Overview"
 "Latency %{ms} ms","Кашњење %{ms} ms","Overview"
+"to %{name}","за %{name}","Overview"
+"from %{name}","од %{name}","Overview"

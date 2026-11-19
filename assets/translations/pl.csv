@@ -1133,3 +1133,5 @@
 "outgoing","wychodzące","Overview"
 "incoming","przychodzące","Overview"
 "Latency %{ms} ms","Opóźnienie %{ms} ms","Overview"
+"to %{name}","do %{name}","Overview"
+"from %{name}","od %{name}","Overview"
