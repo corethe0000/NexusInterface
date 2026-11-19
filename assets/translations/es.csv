@@ -1127,3 +1127,4 @@
 "Latency %{ms} ms","Latencia %{ms} ms","Overview"
 "to %{name}","a %{name}","Overview"
 "from %{name}","de %{name}","Overview"
+"24h","24 h","Overview"

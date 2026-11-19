@@ -1136,3 +1136,4 @@
 "Latency %{ms} ms","Késleltetés %{ms} ms","Overview"
 "to %{name}","címzett: %{name}","Overview"
 "from %{name}","küldő: %{name}","Overview"
+"24h","24 óra","Overview"
