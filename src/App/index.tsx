@@ -23,6 +23,7 @@ import Terminal from './Terminal';
 import UserPage from './UserPage';
 import Modules from './Modules';
 import AppBackground from './AppBackground';
+import RegistrationScreen from './RegistrationScreen';
 
 const AppLayout = styled.div({
   position: 'fixed',
@@ -82,6 +83,7 @@ export default function App() {
               </Main>
               <Navigation />
             </AppLayout>
+            <RegistrationScreen />
           </Overlays>
         </div>
       </ThemeController>
