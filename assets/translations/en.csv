@@ -1176,3 +1176,9 @@ Your user is ready,Your user is ready,NewUser
 Written into a block,Written into a block,NewUser
 Your user is on the blockchain. Log in to start using it.,Your user is on the blockchain. Log in to start using it.,NewUser
 Close,Close,NewUser
+You have %{summary} waiting to be claimed,You have %{summary} waiting to be claimed,Claimable
+Payments to claim,Payments to claim,Claimable
+You have payments to claim,You have payments to claim,Claimable
+Open Nexus Contracts,Open Nexus Contracts,Claimable
+View,View,Claimable
+Open to claim,Open to claim,Claimable
