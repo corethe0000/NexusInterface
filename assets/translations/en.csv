@@ -1138,3 +1138,36 @@ to %{name},to %{name},Overview
 from %{name},from %{name},Overview
 24h,24h,Overview
 Open,Open,Overview
+Creating user %{username}...,Creating user %{username}...,NewUser
+Show,Show,NewUser
+Creating your user,Creating your user,NewUser
+Block,Block,NewUser
+next block,next block,NewUser
+your user,your user,NewUser
+Sent to the Nexus network,Sent to the Nexus network,NewUser
+Waiting to be written into the next block,Waiting to be written into the next block,NewUser
+Ready to log in,Ready to log in,NewUser
+Waiting for %{time},Waiting for %{time},NewUser
+last block %{time} ago,last block %{time} ago,NewUser
+"A new block comes about every 50 seconds, so this usually takes 1 to 3 minutes. The login opens by itself when it is done.","A new block comes about every 50 seconds, so this usually takes 1 to 3 minutes. The login opens by itself when it is done.",NewUser
+Waiting for Nexus Core to connect...,Waiting for Nexus Core to connect...,NewUser
+Nexus Core stopped at block %{blocks} while the network is at %{network}.,Nexus Core stopped at block %{blocks} while the network is at %{network}.,NewUser
+Restart Nexus Core on the computer it runs on.,Restart Nexus Core on the computer it runs on.,NewUser
+Restart Nexus Core,Restart Nexus Core,NewUser
+Core output,Core output,NewUser
+Console,Console,NewUser
+Settings,Settings,NewUser
+Stop waiting,Stop waiting,NewUser
+%{m} min %{s} s,%{m} min %{s} s,NewUser
+%{s} s,%{s} s,NewUser
+Waiting for Nexus Core to connect...,Waiting for Nexus Core to connect...,CoreNotReady
+Nexus Core is synchronizing: %{progress} %,Nexus Core is synchronizing: %{progress} %,CoreNotReady
+Block %{blocks} of %{network},Block %{blocks} of %{network},CoreNotReady
+about %{time} left,about %{time} left,CoreNotReady
+Nexus Core stopped at block %{blocks} while the network is at %{network}.,Nexus Core stopped at block %{blocks} while the network is at %{network}.,CoreNotReady
+Restart Nexus Core on the computer it runs on.,Restart Nexus Core on the computer it runs on.,CoreNotReady
+Restart Nexus Core,Restart Nexus Core,CoreNotReady
+User %{username} is still being created on the blockchain.,User %{username} is still being created on the blockchain.,CoreNotReady
+"Creating a user needs a fully synchronized Nexus Core, otherwise it may never be confirmed. The form opens here by itself when the core is ready.","Creating a user needs a fully synchronized Nexus Core, otherwise it may never be confirmed. The form opens here by itself when the core is ready.",CoreNotReady
+"Logging in needs a fully synchronized Nexus Core, otherwise your balances and transactions are not up to date. The form opens here by itself when the core is ready.","Logging in needs a fully synchronized Nexus Core, otherwise your balances and transactions are not up to date. The form opens here by itself when the core is ready.",CoreNotReady
+Nexus Core stopped at block %{blocks} while the network is at %{network}. Restarting the core...,Nexus Core stopped at block %{blocks} while the network is at %{network}. Restarting the core...,CoreHealth
