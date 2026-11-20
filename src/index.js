@@ -13,6 +13,7 @@ import { prepareSessionInfo } from 'lib/session';
 import { prepareStaking } from 'lib/staking';
 import { prepareCoreHealth } from 'lib/coreHealth';
 import { prepareRegistration } from 'lib/registration';
+import { prepareClaimable } from 'lib/claimable';
 import UT from 'lib/usageTracking';
 import App from './App';
 
@@ -43,6 +44,7 @@ async function run() {
     prepareStaking();
     prepareCoreHealth();
     prepareRegistration();
+    prepareClaimable();
     const { sendUsageData } = store.get(settingsAtom);
     if (sendUsageData) {
       UT.StartAnalytics();

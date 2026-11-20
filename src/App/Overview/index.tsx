@@ -13,6 +13,7 @@ import Globe from './Globe';
 import Stats from './Stats';
 import Dashboard from './Dashboard';
 import ModuleNotices from './ModuleNotices';
+import ClaimableNotice from './ClaimableNotice';
 
 __ = __context('Overview');
 
@@ -92,6 +93,7 @@ export default function Overview() {
   if (settings.overviewDisplay === 'none') {
     return (
       <OverviewPage>
+        <ClaimableNotice />
         <ModuleNotices floating />
       </OverviewPage>
     );
@@ -117,6 +119,7 @@ export default function Overview() {
       )}
 
       <Stats showingGlobe={showingGlobe} />
+      <ClaimableNotice />
       <ModuleNotices floating />
     </OverviewPage>
   );
