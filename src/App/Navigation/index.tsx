@@ -8,7 +8,7 @@ import Tooltip from 'components/Tooltip';
 import ModuleIcon from 'components/ModuleIcon';
 import { consts, timing } from 'styles';
 import { Module, modulesAtom, moduleUpdateCountAtom } from 'lib/modules';
-import { pendingClaimsAtom, contractsModuleAtom } from 'lib/claimable';
+import { claimCountAtom, contractsModuleAtom } from 'lib/claimable';
 
 import logoIcon from 'icons/logo.svg';
 import sendIcon from 'icons/send.svg';
@@ -118,7 +118,7 @@ const ModuleNavItem = ({
 function ModuleNavItems() {
   const modules = useAtomValue(modulesAtom);
   const contractsModule = useAtomValue(contractsModuleAtom);
-  const pendingClaims = useAtomValue(pendingClaimsAtom);
+  const claimCount = useAtomValue(claimCountAtom);
   return modules
     .filter((module) => module.enabled && module.info.type === 'app')
     .map((module) => (
@@ -126,9 +126,7 @@ function ModuleNavItems() {
         key={module.info.name}
         module={module}
         badge={
-          module === contractsModule && pendingClaims.length
-            ? pendingClaims.length
-            : undefined
+          module === contractsModule && claimCount ? claimCount : undefined
         }
       />
     ));
