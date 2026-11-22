@@ -103,6 +103,7 @@ export type Settings = {
   consoleCliSyntax: boolean;
   dontAskToStartStaking: boolean;
   stopStakingAfterUnstake: boolean;
+  stayLoggedIn: boolean;
   lastCheckForUpdates: number | undefined;
 };
 
@@ -189,6 +190,7 @@ export const defaultSettings: Settings = {
   consoleCliSyntax: true,
   dontAskToStartStaking: false,
   stopStakingAfterUnstake: false,
+  stayLoggedIn: false,
   lastCheckForUpdates: undefined,
 };
 
