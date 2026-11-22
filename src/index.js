@@ -12,6 +12,7 @@ import { prepareUpdater } from 'lib/updater';
 import { prepareSessionInfo } from 'lib/session';
 import { prepareStaking } from 'lib/staking';
 import { prepareCoreHealth } from 'lib/coreHealth';
+import { prepareConnectionQuality } from 'lib/connectionQuality';
 import { prepareRegistration } from 'lib/registration';
 import { prepareClaimable } from 'lib/claimable';
 import UT from 'lib/usageTracking';
@@ -43,6 +44,7 @@ async function run() {
     prepareSessionInfo();
     prepareStaking();
     prepareCoreHealth();
+    prepareConnectionQuality();
     prepareRegistration();
     prepareClaimable();
     const { sendUsageData } = store.get(settingsAtom);

@@ -8,6 +8,17 @@ import { store } from 'lib/store';
 
 const requestTimeoutMs = 120000;
 
+export interface RequestSample {
+  endpoint: string;
+  ms: number;
+  //false = no answer at all (timeout, refused, dropped), an API error still counts as answered
+  answered: boolean;
+}
+let requestListener: ((sample: RequestSample) => void) | null = null;
+export function setRequestListener(listener: typeof requestListener) {
+  requestListener = listener;
+}
+
 const getDefaultOptions = ({
   apiSSL,
   ip,
@@ -806,7 +817,19 @@ async function callAPI(endpoint: string, customParams?: Record<string, any>) {
     path: `/${endpoint}`,
     ...getDefaultOptions(conf),
   };
-  return await sendRequest({ params, options, ssl: conf.apiSSL });
+  const start = Date.now();
+  try {
+    const result = await sendRequest({ params, options, ssl: conf.apiSSL });
+    requestListener?.({ endpoint, ms: Date.now() - start, answered: true });
+    return result;
+  } catch (err: any) {
+    requestListener?.({
+      endpoint,
+      ms: Date.now() - start,
+      answered: typeof err?.code === 'number',
+    });
+    throw err;
+  }
 }
 export { callAPI };
 
